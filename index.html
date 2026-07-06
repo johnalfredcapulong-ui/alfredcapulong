@@ -253,6 +253,41 @@
             font-weight: 500;
         }
 
+        /* References Section Layout */
+        .references-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .reference-card {
+            border-top: 1px solid var(--border);
+            padding-top: 25px;
+        }
+
+        .reference-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+        .reference-item {
+            font-size: 0.95rem;
+            font-weight: 300;
+            margin-bottom: 8px;
+        }
+
+        .reference-item strong {
+            display: inline-block;
+            width: 80px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
         /* Contact Details Layout */
         .contact-content {
             display: grid;
@@ -339,6 +374,7 @@
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
+                <a href="#references">References</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
@@ -485,6 +521,25 @@
                     </div>
                 </div>
 
+            </div>
+        </section>
+
+        <!-- Professional References Section -->
+        <section id="references">
+            <div class="section-header">
+                <h2 class="section-title">Professional References</h2>
+            </div>
+            <div class="references-grid">
+                <div class="reference-card">
+                    <h3>Lovely R. Adluz</h3>
+                    <div class="reference-item"><strong>Email</strong> lovelyadluz01@gmail.com</div>
+                    <div class="reference-item"><strong>Phone</strong> 09756456199</div>
+                </div>
+                <div class="reference-card">
+                    <h3>Roman Eugenio</h3>
+                    <div class="reference-item"><strong>Email</strong> eromanjuan@gmail.com</div>
+                    <div class="reference-item"><strong>Phone</strong> 0956 597 0762</div>
+                </div>
             </div>
         </section>
 
